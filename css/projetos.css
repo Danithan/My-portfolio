@@ -1,0 +1,108 @@
+/* ===== SEÇÃO PROJETOS ===== */
+.projetos {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.projetos h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* ===== LAYOUT EM COLUNA COM LINHAS SEPARADORAS ===== */
+.projetos-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background: #fff;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #eaeaea;
+    transition: background-color 0.3s ease;
+}
+
+.projeto-card:hover {
+    background: #fafafa;
+}
+
+.projeto-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.projeto-card:first-child {
+    padding-top: 0;
+}
+
+.projeto-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.projeto-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== TECNOLOGIAS ===== */
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tecnologias span {
+    background: #f8f9fa;
+    color: #495057;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #e9ecef;
+}
+
+/* ===== BOTÃO ===== */
+.btn-projeto {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-projeto:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .projeto-card {
+        padding: 2rem 0;
+    }
+    
+    .projetos-coluna {
+        padding: 0 1rem;
+    }
+    
+    .tecnologias {
+        gap: 0.3rem;
+    }
+    
+    .tecnologias span {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+    }
+}

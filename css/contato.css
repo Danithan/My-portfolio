@@ -1,0 +1,104 @@
+/* ===== SEÇÃO CONTATOS ===== */
+.contatos {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.contatos h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* ===== LINKS DE CONTATO ===== */
+.contatos-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    border: 1px solid #eaeaea;
+}
+
+.contato-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: #007bff;
+}
+
+.contato-link img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.contato-link:hover img {
+    transform: scale(1.1);
+}
+
+.contato-link span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ===== CORES ESPECÍFICAS PARA CADA CONTATO ===== */
+.contato-link[data-contact="github"]:hover {
+    border-color: #333;
+}
+
+.contato-link[data-contact="linkedin"]:hover {
+    border-color: #0077b5;
+}
+
+.contato-link[data-contact="email"]:hover {
+    border-color: #ea4335;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .contatos-links {
+        gap: 1rem;
+    }
+    
+    .contato-link {
+        padding: 1.2rem;
+        min-width: 100px;
+    }
+    
+    .contato-link img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contatos-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .contato-link {
+        flex-direction: row;
+        min-width: 200px;
+        justify-content: flex-start;
+        padding: 1rem 1.5rem;
+    }
+}
