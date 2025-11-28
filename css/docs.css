@@ -1,0 +1,95 @@
+/* ===== SEÇÃO DOCUMENTOS ===== */
+.documentos {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.documentos h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* ===== GRID DE DOCUMENTOS ===== */
+.documentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.documento-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+}
+
+.documento-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-color: #d0d0d0;
+}
+
+.documento-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.documento-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== BADGE DE TIPO ===== */
+.documento-tipo {
+    display: inline-block;
+    background: #f8f9fa;
+    color: #666;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+}
+
+/* ===== BOTÕES ===== */
+.btn-documento {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f8f9fa;
+    color: #333;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 1px solid #eaeaea;
+}
+
+.btn-documento:hover {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+    transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .documentos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .documento-card {
+        padding: 1.5rem;
+    }
+}
