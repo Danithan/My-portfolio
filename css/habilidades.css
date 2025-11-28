@@ -1,0 +1,55 @@
+/* ===== HABILIDADES TÉCNICAS ===== */
+.habilidades {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eaeaea;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.habilidades h3 {
+    color: #333;
+    margin-bottom: 3rem;  /* Mais espaço abaixo do título */
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;   /* Centraliza o título */
+}
+
+/* ===== GRID DOS ÍCONES ===== */
+.habilidades-icones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 colunas */
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.habilidades-icones img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.habilidades-icones img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .habilidades-icones {
+        grid-template-columns: repeat(3, 1fr);  /* 3 colunas no tablet */
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .habilidades-icones {
+        grid-template-columns: repeat(2, 1fr);  /* 2 colunas no mobile */
+        gap: 1rem;
+    }
+    
+    .habilidades h3 {
+        margin-bottom: 2rem;
+    }
+}
