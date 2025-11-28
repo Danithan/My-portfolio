@@ -1,0 +1,37 @@
+/* ===== APRESENTAÇÃO ===== */
+.apresentacao {
+    background: #f8f9fa;
+    padding: 120px 0 80px;
+    margin-top: 60px;
+}
+
+.apresentacao .container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.foto-perfil {
+    flex: 0 0 300px;
+}
+
+.foto-perfil img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.texto-apresentacao {
+    flex: 1;
+}
+
+.texto-apresentacao h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.texto-apresentacao p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}

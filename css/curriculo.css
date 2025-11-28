@@ -1,0 +1,153 @@
+.curriculo {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.curriculo h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* ===== GRUPOS DO CURRÍCULO ===== */
+.grupo-curriculo {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.grupo-curriculo:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.grupo-curriculo h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* ===== FORMAÇÃO ACADÊMICA ===== */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-item {
+    padding: 0;
+}
+
+.timeline-item h4 {
+    color: #333;
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.periodo {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* ===== EXPERIÊNCIA PROFISSIONAL ===== */
+.experiencia-item {
+    padding: 0;
+}
+
+.experiencia-item h4 {
+    color: #333;
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.experiencia-item p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== HABILIDADES COM ÍCONES ===== */
+.habilidades-icones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.habilidade-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.habilidade-item:hover {
+    transform: translateY(-5px);
+}
+
+.icone-habilidade {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 50%;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.habilidade-item:hover .icone-habilidade {
+    background: #007bff;
+    color: white;
+}
+
+.nome-habilidade {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* ===== CORES ESPECÍFICAS PARA CADA TECNOLOGIA ===== */
+.habilidade-item[data-tech="python"]:hover .icone-habilidade {
+    background: #3776AB;
+}
+
+.habilidade-item[data-tech="html"]:hover .icone-habilidade {
+    background: #E34F26;
+}
+
+.habilidade-item[data-tech="css"]:hover .icone-habilidade {
+    background: #1572B6;
+}
+
+.habilidade-item[data-tech="flask"]:hover .icone-habilidade {
+    background: #000000;
+}
+
+.habilidade-item[data-tech="git"]:hover .icone-habilidade {
+    background: #F05032;
+}
+
+.habilidade-item[data-tech="sqlite"]:hover .icone-habilidade {
+    background: #003B57;
+}
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .grupo-curriculo {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .habilidades-list {
+        gap: 0.5rem;
+    }
+}
