@@ -3,101 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Daniel Nathan - Portfólio</title>
+    <meta name="description" content="Portfólio de Daniel Nathan - Desenvolvedor e estudante de Análise e Desenvolvimento de Sistemas">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/apresentacao.css">
+    <link rel="stylesheet" href="css/curriculo.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/contato.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
 </head>
 <body>
-    <header>
-        <p>
-            Daniel Nathan 
-        </p>
-        <nav>
-            <ul>
-                <li><a href="Currículo">Currículo</a></li>
-                <li><a href="Projetos">Projetos</a></li>
-                <li><a href="Contato">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <p class="logo">Daniel Nathan</p>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#apresentacao">Início</a></li>
+                    <li><a href="#curriculo">Currículo</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contatos">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section id="apresentacao">
-            <div class="foto">
-            <img src="imagens/foto-perfil.png" alt="Foto de perfil Daniel Nathan">
+        <!-- Seção Apresentação -->
+        <section id="apresentacao" class="apresentacao">
+            <div class="container">
+                <div class="foto-perfil">
+                    <img src="imagens/foto-perfil.png" alt="Foto de perfil Daniel Nathan">
+                </div>
+                <div class="texto-apresentacao">
+                    <h1>Prazer, sou Daniel Nathan</h1>
+                    <p>Tenho 20 anos e estou cursando Análise e Desenvolvimento de Sistemas na FATEC. Atualmente participo de uma iniciação científica no IEAv e pretendo me especializar em Cloud ou Backend.</p>
+                    <p>Este portfólio apresenta minhas capacitações e habilidades na área de T.I que podem ser úteis para sua empresa.</p>
+                </div>
             </div>
-            <div class="texto apresentacao">
-            <h6>Prazer meu nome é Daniel Nathan, tenho 20 anos e estou cursando Analise e desenvolvimento de Sistemas na FATEC. Estou fazendo uma iniciação cientifica no IEAV e até o final do curso eu pretendo me especializar em Cloud ou Backend. A partir desse portfólio, pretendo mostrar todas as minhas capacitações e habilidades na área de T.I que possam ser uteis para a empresa.</h6>
-            </div>
-
         </section>
 
-        <section id="Currículo">
-            <div class="formacao-academica">
-                <h2>Formação Acadêmica</h2>
-                <ul>
-                    <li>
-                        <h3>Colégio Inspire - Ensino Médio</h3>
-                        <p>2021 - 2023</p>
-                    </li>
-                    <li>
-                        <h3>FATEC São josé dos Campos - Análise e Desenvolvimento de Sistemas</h3>
-                        <p>2025 - Atualmente</p>
-                    </li>
-                </ul>
-            </div>
+        <!-- Seção Currículo -->
+        <section id="curriculo" class="curriculo">
+            <div class="container">
+                <h2>Currículo</h2>
+                
+                <div class="formacao-academica">
+                    <h3>Formação Acadêmica</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>FATEC São José dos Campos - Análise e Desenvolvimento de Sistemas</h4>
+                            <span class="periodo">2025 - Atualmente</span>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Colégio Inspire - Ensino Médio</h4>
+                            <span class="periodo">2021 - 2023</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="experiencia-profissional">
-                <h2>Experiência Profissional</h2>
-                <ul>
-                    <li>
-                        <h3>iniciação cientifica - IEAv (Instituto de Estudos Avançados)</h3>
-                        <p>2025 - Atualmente</p>
+                <div class="experiencia-profissional">
+                    <h3>Experiência Profissional</h3>
+                    <div class="experiencia-item">
+                        <h4>Iniciação Científica - IEAv (Instituto de Estudos Avançados)</h4>
+                        <span class="periodo">2025 - Atualmente</span>
                         <p>Faço parte do time de desenvolvimento do projeto PEmSE</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="habilidades">
-                <h2>Habilidades</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>HTML/CSS</li>
-                    <li>Flask</li>
-                    <li>Git/GitHub</li>
-                    <li>SQLite</li>
-                </ul>
+                    </div>
+                </div>
 
+                <div class="habilidades">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="habilidades-list">
+                        <span class="habilidade-tag">Python</span>
+                        <span class="habilidade-tag">HTML/CSS</span>
+                        <span class="habilidade-tag">Flask</span>
+                        <span class="habilidade-tag">Git/GitHub</span>
+                        <span class="habilidade-tag">SQLite</span>
+                    </div>
+                </div>
             </div>
         </section>
-           
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <ul>
-                <li>
-                    <h3>Equipe Pigeon Code</h3>
-                    <p>Descrição: Um site para ensinar e analisar a qualidade do metodo Scrum dentro de empresas. Minha função foi o desenvolvimento do Backend e extração de dados do banco de dados</p>
-                    <p>Tecnologias: HTML, CSS, Flask, Python, SQLite, GitHub, Bootstrap</p>
-                    <a href="https://github.com/PigeonsCode/Equipe-PigeonCode" target="_blank" class="links"> Github do projeto Pigeon Code</a>
 
-                </li>
-                <li>
-                    <h3>PEmSE(Planejamento para Emprego de Sistemas Espaciais)</h3>
-                    <p>Descrição: Projeto no qual participei na iniciação cientifica, fiz parte do time de desenvolvimento do programa que utilizava meta-heuristica para otimização na seleção de passagens para monitoramento de imagens de satélites SAR .</p>
-                </li>
+        <!-- Seção Projetos -->
+        <section id="projetos" class="projetos">
+            <div class="container">
+                <h2>Projetos</h2>
+                
+                <div class="projetos-grid">
+                    <div class="projeto-card">
+                        <h3>Equipe Pigeon Code</h3>
+                        <p>Site para ensinar e analisar a qualidade do método Scrum dentro de empresas. Minha função foi o desenvolvimento do Backend e extração de dados do banco de dados.</p>
+                        <div class="tecnologias">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Flask</span>
+                            <span>Python</span>
+                            <span>SQLite</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <a href="https://github.com/PigeonsCode/Equipe-PigeonCode" target="_blank" class="btn-projeto">Ver no GitHub</a>
+                    </div>
 
-            </ul>
+                    <div class="projeto-card">
+                        <h3>PEmSE (Planejamento para Emprego de Sistemas Espaciais)</h3>
+                        <p>Projeto de iniciação científica onde participei do time de desenvolvimento do programa que utiliza meta-heurística para otimização na seleção de passagens para monitoramento de imagens de satélites SAR.</p>
+                        <div class="tecnologias">
+                            <span>Python</span>
+                            <span>Meta-heurística</span>
+                            <span>Otimização</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-            <section id="contatos">
+
+        <!-- Seção Contatos -->
+        <section id="contatos" class="contatos">
+            <div class="container">
                 <h2>Contatos</h2>
-                <ul>
-                    <li>
-                        <a href="https://github.com/Danithan" target="_blank">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/daniel-leite-28220b384/" target="_blank">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danielnathanfl@gmail.com&su=Contato%20Portfólio&body=Olá%20Daniel," target="_blank">Email</a>
-                    </li>
-                </ul>
-            </section>
+                <div class="contatos-links">
+                    <a href="https://github.com/Danithan" target="_blank" class="contato-link">
+                        <img src="imagens/icons/github.svg" alt="GitHub">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-leite-28220b384/" target="_blank" class="contato-link">
+                        <img src="imagens/icons/linkedin.svg" alt="LinkedIn">
+                        LinkedIn
+                    </a>
+                    <a href="mailto:danielnathanfl@gmail.com?subject=Contato Portfólio&body=Olá Daniel," class="contato-link">
+                        <img src="imagens/icons/email.svg" alt="Email">
+                        Email
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Desenvolvido por Daniel Nathan - 2025</p>
+        </div>
+    </footer>
 </body>
 </html>
